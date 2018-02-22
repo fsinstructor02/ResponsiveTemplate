@@ -1,3 +1,73 @@
+ 
+.tool-tip {
+  position: absolute;
+  height: 75px;
+  width: 100px;
+  background:white;
+  text-align: center;
+  color: #000;
+  padding: 10px 0 0 0;
+  bottom: 20px;
+  right: -44px;
+  opacity: 0;
+  z-index: 9;
+  /* box-shadow: #ccc 4px 3px 4px; */
+  border: 0.5px solid #ccc;
+
+  transition: opacity ease-in-out 1s;
+}
+
+.progress-container {
+  width: 600px;
+  height: 25px;
+  margin: 100px auto;
+  position: relative;
+  border: 0.5px solid #ccc;
+  border-radius: 25px;
+  box-shadow: #ccc 4px 4px 4px;
+  padding: 10px;
+}
+
+
+.progress-meter:hover .tool-tip {
+ opacity: 1;
+}
+
+.progress-meter {
+  position: relative;
+  cursor: pointer;
+  left: 0px;
+  top: 7px;
+  height: 13px;
+  width: 0%;
+  /* background-color: red; */
+  border-radius: 25px;
+  animation: meter 5s ease-in-out 1s forwards;
+
+
+	background: #e5405e;
+	/* Old browsers */
+	background: -moz-linear-gradient(left, #e5405e 0%, #ffdb3a 25%, #3fffa2 50%, #3fffa2 50%, #1a9be0 73%, #ba68ed 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #e5405e 0%, #ffdb3a 25%, #3fffa2 50%, #3fffa2 50%, #1a9be0 73%, #ba68ed 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #e5405e 0%, #ffdb3a 25%, #3fffa2 50%, #3fffa2 50%, #1a9be0 73%, #ba68ed 100%);
+}
+
+
+@keyframes meter {
+  0%{ width: 0%;}
+  100% {width: 100%}
+}
+
+
+
+
+
+
+
+
+
 .main {
   border: 1px solid #ccc;
   width: 100%;
